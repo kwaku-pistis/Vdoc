@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">VDoc</string>
+    <string name="hint_symptom">Separate by commas            </string>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="informesintomas">Report your Symptoms</string>
+
+    <string name="list_option_search_title">Medical Category</string>
+
+    <string name="list_symptom_title">Symptoms</string>
+
+    <string name="button_médicos">See Doctors</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="title_activity_doencas">Diseases</string>
+    ------------ Diagnostic Screen -------------
+    <string name="causas">Causes</string>
+
+    <string name="sintomas">Symptoms</string>
+
+    <string name="prevencoes">Preventions</string>
+    ------------ Doctors Screen -------------
+    <string name="title_activity_medicos">Doctors</string>
+    ------------ Doctor Screen -------------
+    <string name="title_activity_medico">Doctor</string>
+
+    <string name="informacoes_medico">Information</string>
+
+    <string name="endereco_medico">Address</string>
+
+    <string name="button_mapa">Localization Map</string>
+
+</resources>

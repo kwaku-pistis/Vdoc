@@ -1,0 +1,132 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:parentActivityName=".activities.SintomaActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:fitsSystemWindows="true">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="@color/colorPrimary"
+            app:expandedTitleMarginEnd="64dp"
+            app:expandedTitleMarginStart="48dp"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/Mytoolbar"
+                android:layout_width="match_parent"
+                android:layout_height="16dp"
+                app:layout_scrollFlags="scroll"></android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/imageView"
+                    android:paddingRight="15dp"
+                    android:src="@drawable/medico"
+                    android:layout_gravity="center" />
+
+                <TextView
+                    android:id="@+id/textViewDoctorName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="5dp"
+                    android:textSize="30sp"
+                    android:text="Dr. Abidala Silva"
+                    android:textColor="@color/text" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textViewEndereco"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:autoLink="phone|email|web"
+                android:linksClickable="true"
+                android:paddingTop="5dp"
+                android:textSize="20sp"
+                android:text="@string/endereco_medico"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/textViewEnderecoT"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:autoLink="phone|email|web"
+                android:linksClickable="true"
+                android:paddingTop="10dp"
+                android:textSize="20sp"
+                android:text="Rua Rita de cassia, nº 39, Prata Prédio São Rafael ,sala 307"
+                android:textColor="@color/text" />
+
+            <TextView
+                android:id="@+id/textViewInformacoes"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:autoLink="phone|email|web"
+                android:linksClickable="true"
+                android:paddingTop="30dp"
+                android:textSize="20sp"
+                android:text="@string/informacoes_medico"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/textViewInformacoesT"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:autoLink="phone|email|web"
+                android:linksClickable="true"
+                android:paddingTop="10dp"
+                android:paddingBottom="30dp"
+                android:textSize="20sp"
+                android:text="Médico clinico geral especialista em doenças virais, atende de Segunda a Quinta nos horários de 9:00 ás 16:00."
+                android:textColor="@color/text" />
+
+            <Button
+                android:id="@+id/button_mapa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/button_mapa"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/white"
+                android:textAllCaps="false"/>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

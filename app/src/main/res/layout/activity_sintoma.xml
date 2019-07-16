@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#333"
+    android:fitsSystemWindows="true">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/one1"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome to VDoc"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:layout_marginTop="75dp"
+        android:textAlignment="center"
+        android:textColor="#ffffff"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/et_sintoma"
+        android:layout_marginBottom="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/informesintomas"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/colorPrimaryLight"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/et_sintoma"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="220dp"
+        android:background="@color/white"
+        android:hint="@string/hint_symptom"
+        android:layout_marginLeft="25dp"
+        android:inputType="text"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:layout_marginStart="25dp" />
+
+    <ImageView
+        android:id="@+id/bt_pesquisar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/et_sintoma"
+        android:background="#333"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="25dp"
+        android:src="@drawable/lupa"
+        android:layout_alignParentRight="true" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryLight"
+        android:layout_marginBottom="16dp"
+        android:text="Please note that this app only diagnoses and suggests prevention mecahanisms. See Specialists for more advise, prescription and treatment"/>
+</RelativeLayout>

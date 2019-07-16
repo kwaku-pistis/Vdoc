@@ -1,0 +1,231 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="#333"
+    android:parentActivityName=".activities.SintomaActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:fitsSystemWindows="true">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            app:contentScrim="@color/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/one1"
+                android:scaleType="centerCrop"
+                android:fitsSystemWindows="true"
+                android:id="@+id/profile_id"
+                app:layout_collapseMode="parallax"
+                android:contentDescription="TODO"/>
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/Mytoolbar"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+       <android.support.v7.widget.CardView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:padding="10dp"
+           android:layout_marginTop="10dp"
+           android:layout_marginBottom="10dp">
+
+           <TextView
+               android:id="@+id/textViewDescription"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:autoLink="phone|email|web"
+               android:linksClickable="true"
+               android:padding="20dp"
+               android:textSize="20sp"
+               android:text=""
+               android:textColor="@color/text" />
+
+       </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:paddingRight="15dp"
+                    android:src="@drawable/causa"
+                    android:layout_gravity="center" />
+
+                <TextView
+                    android:id="@+id/textViewCausas"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:autoLink="phone|email|web"
+                    android:linksClickable="true"
+                    android:paddingTop="12dp"
+                    android:textSize="20sp"
+                    android:text="@string/causas"
+                    android:textColor="@color/colorPrimaryLight"/>
+
+            </LinearLayout>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/textViewCausasT"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:autoLink="phone|email|web"
+                    android:linksClickable="true"
+                    android:padding="20dp"
+                    android:textSize="20sp"
+                    android:text=""
+                    android:textColor="@color/text" />
+
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:paddingRight="15dp"
+                    android:src="@drawable/sintoma"
+                    android:layout_gravity="center" />
+
+                <TextView
+                    android:id="@+id/textViewSintomas"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:autoLink="phone|email|web"
+                    android:linksClickable="true"
+                    android:paddingTop="17dp"
+                    android:textSize="20sp"
+                    android:text="@string/sintomas"
+                    android:textColor="@color/colorPrimaryLight" />
+
+            </LinearLayout>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/textViewSintomasL"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:autoLink="phone|email|web"
+                    android:linksClickable="true"
+                    android:padding="20dp"
+                    android:textSize="20sp"
+                    android:text=""
+                    android:textColor="@color/text" />
+
+            </android.support.v7.widget.CardView>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:paddingRight="15dp"
+                    android:src="@drawable/prevencao"
+                    android:layout_gravity="center" />
+
+                <TextView
+                    android:id="@+id/textViewPrevencoes"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:autoLink="phone|email|web"
+                    android:linksClickable="true"
+                    android:paddingTop="10dp"
+                    android:textSize="20sp"
+                    android:text="@string/prevencoes"
+                    android:textColor="@color/colorPrimaryLight" />
+
+            </LinearLayout>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/textViewPrevencoesL"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:autoLink="phone|email|web"
+                    android:linksClickable="true"
+                    android:textSize="20sp"
+                    android:padding="20dp"
+                    android:paddingBottom="30dp"
+                    android:text=""
+                    android:textColor="@color/text" />
+
+            </android.support.v7.widget.CardView>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/button_médicos"
+                android:id="@+id/button_medicos"
+                android:layout_gravity="center_horizontal"
+                android:visibility="invisible"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/white"
+                android:textAllCaps="false"/>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>
