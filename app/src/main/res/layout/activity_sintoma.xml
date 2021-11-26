@@ -14,7 +14,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Welcome to VDoc"
+        android:text="@string/welcome_to_vdoc"
         android:textSize="40sp"
         android:textStyle="bold"
         android:layout_marginTop="75dp"
@@ -48,7 +48,6 @@
         android:layout_marginBottom="220dp"
         android:background="@color/white"
         android:hint="@string/hint_symptom"
-        android:layout_marginLeft="25dp"
         android:inputType="text"
         android:padding="10dp"
         android:singleLine="true"
@@ -63,10 +62,9 @@
         android:background="#333"
         android:paddingTop="2dp"
         android:paddingBottom="2dp"
-        android:paddingLeft="10dp"
-        android:paddingRight="25dp"
-        android:src="@drawable/lupa"
-        android:layout_alignParentRight="true" />
+        android:paddingStart="10dp"
+        android:paddingEnd="25dp"
+        android:src="@drawable/lupa" />
 
 
     <TextView
@@ -76,5 +74,5 @@
         android:textAlignment="center"
         android:textColor="@color/colorPrimaryLight"
         android:layout_marginBottom="16dp"
-        android:text="Please note that this app only diagnoses and suggests prevention mecahanisms. See Specialists for more advise, prescription and treatment"/>
+        android:text="@string/disclaimer"/>
 </RelativeLayout>

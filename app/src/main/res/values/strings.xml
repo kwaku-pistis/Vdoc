@@ -33,5 +33,9 @@
     <string name="endereco_medico">Address</string>
 
     <string name="button_mapa">Localization Map</string>
+    <string name="button_to_send_message">Button to send message</string>
+    <string name="default_web_client_id">default_web_client_id</string>
+    <string name="welcome_to_vdoc">Welcome to VDoc</string>
+    <string name="disclaimer">Please note that this app only diagnoses and suggests prevention mecahanisms. See Specialists for more advise, prescription and treatment</string>
 
 </resources>
